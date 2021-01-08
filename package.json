@@ -1,10 +1,10 @@
 {
   "name": "recursion",
   "version": "1.0.0",
-  "description": "![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)",
-  "main": "index.js",
+  "description": "Recursion exercises and tests",
+  "main": "recursion.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
