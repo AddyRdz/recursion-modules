@@ -2,39 +2,47 @@
 
 # Recursion Homework
 
-## Instructions 
+## Instructions
 
 1. Fork this repo to your own account and download to your `sei/homework` folder.
 1. Follow along the steps in this README to progress through the myGA modules.
-1. When you are finished, submit your assignment by clicking on the issues tab above on this repo and start a [new issue](https://git.generalassemb.ly/sei-921/recursion/issues/new?assignees=&labels=&template=seir-homework-submission.md&title=YOUR+FULL+NAME). 
+1. When you are finished, submit your assignment by clicking on the issues tab above on this repo and start a [new issue](https://git.generalassemb.ly/sei-921/recursion/issues/new?assignees=&labels=&template=seir-homework-submission.md&title=YOUR+FULL+NAME).
 1. The issue template will ask that you answer three exit ticket questions on recursion before submitting your issue, to summarize your learning on this topic.
 
 **Note: This exercise includes a coding component, but for tonight, focus on understanding recursion conceptually. We will do the coding part of the assignment together tomorrow morning.**
 
-Unless otherwise noted, homework is due at 10:00 AM ET the next day. 
+Unless otherwise noted, homework is due at 10:00 AM ET the next day.
 
 ## Overview
-We've seen that a function can call other functions to perform an action. When a function becomes too large to read or test easily, we split them into smaller functions that perform parts of the larger whole. 
 
-**Recursion is a function that calls itself.** A recursive function achieves a small part of the larger task, then passes the partially completed result to another call of itself.  Recursion is a useful alternative to iteration methods like loops. They are especially helpful for looking at all combinations or permutations of a given input.
+We've seen that a function can call other functions to perform an action. When a function becomes too large to read or test easily, we split them into smaller functions that perform parts of the larger whole.
+
+**Recursion is a function that calls itself.** A recursive function achieves a small part of the larger task, then passes the partially completed result to another call of itself. Recursion is a useful alternative to iteration methods like loops. They are especially helpful for looking at all combinations or permutations of a given input.
 
 There are two parts to this lesson:
+
 1. [myGA module: Recursion](https://my.generalassemb.ly/activities/773) -- homework tonight
 2. [In-Class Exercise: Writing Recursive Functions](exercises/recursion.js) -- tomorrow's morning exercise.
 
-> **Note**: The myGA module contains a link to an exercise in CodePen. **The code in CodePen is the exact same as the code for the in-class exercises.** 
+You can automatically test your progress in the exercises by running `npm install` from your terminal inside this folder to install the automated testing libraries, then run `npm test` to see if your functions pass the test cases. You will have to add the necessary parameters to these functions so you can reference their usage inside the test file to see how the tests expect the function to be called.
+
+> **Note**: The myGA module contains a link to an exercise in CodePen. **The code in CodePen is the exact same as the code for the in-class exercises.**
 
 ## Learning Objectives
+
 By the end of this lesson, you will be able to:
+
 - Define recursion.
 - Write the base case and recursive cases of a recursive function.
 - Identify functions that use recursion and explain why it’s used.
 
 ## Prerequisites
+
 - Big O Notation
 
 ## Three steps of recursion
-We can break a recursive function into three steps: 
+
+We can break a recursive function into three steps:
 
 1. Base case
 2. Action
@@ -47,12 +55,15 @@ Next, perform the action of the function. If recursive functions simply called t
 Finally, we call the function recursively inside itself. Make sure we progress towards the base case. If we do not make progress toward the base case we will cause a stack overflow when the stack of unresolved function calls gets too large to handle.
 
 ### Memoization
+
 Memoization is often useful in recursion. This is when the results of a function call are remembered so they can be used again in later function calls. This is like caching your results to use again.
 
 ### Tail Recursion
+
 Tail recursion is where calculations are performed first and then the recursive call is executed. Some programming languages, usually functional ones, optimize tail calls so they take up less room on the call stack.
 
 ## Applications of Recursion
+
 - Permutations
 - Traversing Multiple Paths
 - Divide and Conquer
@@ -64,14 +75,15 @@ Consider using recursion any time you're exploring multiple possibilities or pat
 Recursion also lets us divide a larger problem into smaller subproblems. Merge sort, for example, can use recursion to break down sorting an array into sorting two, smaller arrays. Eventually it will reach the base case of a single element array, and then zip these single-element arrays back together into a single sorted array. While this could be done using iteration, it would become difficult to read, modify, and debug compared to the recursive version.
 
 ## Additional Resources
+
 - How recursion comes up in [job interviews](https://hackernoon.com/coding-interview-recursion-f0d60c9dbb60).
 - More thoughts on recursion in [job interviews](https://www.byte-by-byte.com/recursion/).
 - Sketching out a [recursive function](https://www.youtube.com/watch?v=bGC2fNALbNU).
 - Recursion for Coding Interviews: [The Ultimate Guide](https://www.byte-by-byte.com/recursion/).
 - Just for fun: The [recursion subreddit](https://www.reddit.com/r/recursion).
 
-
 ### Sources/Contributors
+
 - [Carlos Godoy](https://git.generalassemb.ly/seir-826/recursion)
 - [Ryan Fleharty](https://git.generalassemb.ly/ryanfleharty/recursion-exercises/blob/master/lesson.md)
 - [Ali Spittel](https://github.com/aspittel/coding-cheat-sheets/blob/master/fundamentals/recursion.md)
