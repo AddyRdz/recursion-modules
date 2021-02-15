@@ -137,7 +137,7 @@ const getArraySum = (numsArr, sum) => {
 6.  Now that we’ve established our base case and a way to get down to our base case, we can now call our function
 
 ```js
-const getArraySum = (numsArr , sum) => {
+const getArraySum = (numsArr, sum) => {
   sum = sum || 0;
   if (numsArr.length === 0){
     return sum;
