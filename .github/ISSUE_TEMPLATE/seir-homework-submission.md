@@ -19,3 +19,13 @@ Directions: Answer the following questions!
 
 3. What are 1-2 common use cases for recursive functions, and why might they be useful in each case? 
 > Your answer here.
+
+4. Write the pseudo-code (steps) for writing a recursive function that calculates the sum of all the numbers in an array.
+
+```js
+const nums = [1,2,3,4,5,6,7,8,9,10]
+
+const getArraySum = (arr) =>{
+  //your pseudocode here!
+}
+```
