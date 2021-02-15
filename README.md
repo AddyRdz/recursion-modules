@@ -9,7 +9,7 @@
 1. When you are finished, submit your assignment by clicking on the issues tab above on this repo and start a [new issue](https://git.generalassemb.ly/seir-201/recursion/issues/new?assignees=&labels=&template=seir-homework-submission.md&title=YOUR+FULL+NAME).
 1. The issue template will ask that you answer exit ticket questions on recursion before submitting your issue, to summarize your learning on this topic.
 
-**Note: This exercise includes a coding component, but for tonight, focus on understanding recursion conceptually. We will do the actual coding part of the assignment together tomorrow morning.**
+**Note: This exercise includes a coding component. For tonight, focus on understanding recursion conceptually but do try some of the coding exercises in the myGA CodePen that is provided. We will review and continue the coding part of the assignment together tomorrow morning.**
 
 Unless otherwise noted, homework is due at 10:00 AM ET the next day.
 
