@@ -90,9 +90,9 @@ We can express this with a recursive function that follows our above pattern rea
 2. Second, define a function
 
 ```js
-const numsToSum = [ 1 , 2, 3, 4, 5, 6, 7, 8 , 9 ,10 ];
+const numsToSum = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 
-const sumNumbers = ( numsArr ) => {
+const getArraySum = (numsArr) => {
 
 }
 ```
@@ -100,9 +100,9 @@ const sumNumbers = ( numsArr ) => {
 3. we need a base case
 
 ```js
-const sumNumbers = ( numsArr ) => {
+const getArraySum = (numsArr) => {
  if ( numsArr.length === 0 ){
- return sum;
+   return sum;
  }
 }
 ```
@@ -113,10 +113,10 @@ We have to define our sum variable and we have to be able to access it over and 
 If it isn’t defined, let’s give it a value of 0, otherwise it will equal the sum of the previous numbers.
 
 ```js
-const sumNumbers = ( numsArr , sum ) => {
-sum = sum || 0;
+const getArraySum = (numsArr, sum) => {
+ sum = sum || 0;
  if  (numsArr.length === 0 ){
- return sum;
+   return sum;
  }
 }
 ```
@@ -125,32 +125,31 @@ sum = sum || 0;
 Each time we add a number we have to remove it from the array, thus decreasing the array length and bring us closer to our base case. We’ll use the `shift()` method so it is taking the number from the start of the array, to match our previous calculations, but one could just as easily use `.pop()`
 
 ```js
-const sumNumbers = ( numsArr , sum) => {
-sum = sum || 0;
- if (numsArr.length === 0){
- return sum;
- }
- sum += numsArr.shift();
+const getArraySum = (numsArr, sum) => {
+  sum = sum || 0;
+  if (numsArr.length === 0){
+    return sum;
+  }
+  sum += numsArr.shift();
 }
 ```
 
 6.  Now that we’ve established our base case and a way to get down to our base case, we can now call our function
 
 ```js
-const sumNumbers = ( numsArr , sum) => {
-sum = sum || 0;
- if (numsArr.length === 0){
- return sum;
- }
- sum += numsArr.shift();
-return sumNumbers ( numsArr , sum );
+const getArraySum = (numsArr , sum) => {
+  sum = sum || 0;
+  if (numsArr.length === 0){
+    return sum;
+  }
+  sum += numsArr.shift();
+  return sumNumbers(numsArr, sum);
 }
 ```
 7. Let’s test it!
 
-```
-sumNumbers (numsToSum);
-
+```js
+console.log(getArraySum(numsToSum)); // => 55
 ```
 
 
