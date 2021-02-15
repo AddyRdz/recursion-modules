@@ -1,6 +1,6 @@
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-# Recursion Homework
+# Recursion
 
 ## Instructions
 
@@ -166,6 +166,12 @@ Now that you understand the how of recursion, let's talk about when and why to u
 Consider using recursion any time you're exploring multiple possibilities or paths, such as calculating all possible combinations of elements, or checking all paths between two destinations. Recursion provides the simplest solution by continuing through each possibility using a new recursive call.
 
 Recursion also lets us divide a larger problem into smaller subproblems. Merge sort, for example, can use recursion to break down sorting an array into sorting two, smaller arrays. Eventually it will reach the base case of a single element array, and then zip these single-element arrays back together into a single sorted array. While this could be done using iteration, it would become difficult to read, modify, and debug compared to the recursive version.
+
+## Your turn
+
+Sometimes, it is scary to do things that might cause an infinite loop or blow the stack- because it may be difficult to stop and cause your computer to freeze and you might have to restart it.
+
+[repl.it](repl.it) is really nice because if you cause an infinite loop or try to blow the stack it'll stop pretty quickly and give you an error. You are welcome to do this in your code editor, but if you are afraid of creating infinite loops, go on over to `repl.it` or GA's [CodePen for Recursion](https://codepen.io/GAmarketing/pen/oVNWjd) and get coding there.
 
 ## Additional Resources
 
