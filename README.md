@@ -42,6 +42,8 @@ By the end of this lesson, you will be able to:
 
 ## Three steps of recursion
 
+♻️ To understand recursion, you must understand recursion ♻️
+
 We can break a recursive function into three steps:
 
 1. Base case
@@ -54,16 +56,107 @@ Next, perform the action of the function. If recursive functions simply called t
 
 Finally, we call the function recursively inside itself. Make sure we progress towards the base case. If we do not make progress toward the base case we will cause a stack overflow when the stack of unresolved function calls gets too large to handle.
 
-### Memoization
+Recursion is found in mathematics and can look really scary. But we can use recursion with ease.
 
-Memoization is often useful in recursion. This is when the results of a function call are remembered so they can be used again in later function calls. This is like caching your results to use again.
+## Recursion Example 
 
-### Tail Recursion
+Let’s think about adding the following numbers
 
-Tail recursion is where calculations are performed first and then the recursive call is executed. Some programming languages, usually functional ones, optimize tail calls so they take up less room on the call stack.
+```
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+```
+
+### Solving it by hand
+Average humans, do not add all the numbers all at once.  We add two numbers together, store that number, and then add the next number, until we are left with one number. When we have one number, that is our answer.
+
+So we do:
+```
+1  + 2   = 3
+3  + 3   = 6
+6  + 4   = 10
+10 + 5   = 15
+15 + 6   = 21
+21 + 7   = 28
+28 + 8   = 36
+36 + 9   = 45
+45 + 10   = 55
+55 + no numbers left means our answer is 55
+```
+
+### Solving it recursively
+We can express this with a recursive function that follows our above pattern really easily
+
+1. First, since we have a list of numbers (our test case), let’s express them as an array
+2. Second, define a function
+
+```js
+const numsToSum = [ 1 , 2, 3, 4, 5, 6, 7, 8 , 9 ,10 ];
+
+const sumNumbers = ( numsArr ) => {
+
+}
+```
+
+3. we need a base case
+
+```js
+const sumNumbers = ( numsArr ) => {
+ if ( numsArr.length === 0 ){
+ return sum;
+ }
+}
+```
+
+4. Holding onto our sum value
+
+We have to define our sum variable and we have to be able to access it over and over again, let’s pass it in our function
+If it isn’t defined, let’s give it a value of 0, otherwise it will equal the sum of the previous numbers.
+
+```js
+const sumNumbers = ( numsArr , sum ) => {
+sum = sum || 0;
+ if  (numsArr.length === 0 ){
+ return sum;
+ }
+}
+```
+
+5. Define a way (or rules) to decrease our complex problem down to the base case <br>
+Each time we add a number we have to remove it from the array, thus decreasing the array length and bring us closer to our base case. We’ll use the `shift()` method so it is taking the number from the start of the array, to match our previous calculations, but one could just as easily use `.pop()`
+
+```js
+const sumNumbers = ( numsArr , sum) => {
+sum = sum || 0;
+ if (numsArr.length === 0){
+ return sum;
+ }
+ sum += numsArr.shift();
+}
+```
+
+6.  Now that we’ve established our base case and a way to get down to our base case, we can now call our function
+
+```js
+const sumNumbers = ( numsArr , sum) => {
+sum = sum || 0;
+ if (numsArr.length === 0){
+ return sum;
+ }
+ sum += numsArr.shift();
+return sumNumbers ( numsArr , sum );
+}
+```
+7. Let’s test it!
+
+```
+sumNumbers (numsToSum);
+
+```
+
 
 ## Applications of Recursion
 
+- Iteration
 - Permutations
 - Traversing Multiple Paths
 - Divide and Conquer
