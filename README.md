@@ -7,9 +7,9 @@
 1. Fork this repo to your own account and download to your `sei/homework` folder.
 1. Follow along the steps in this README to progress through the myGA modules.
 1. When you are finished, submit your assignment by clicking on the issues tab above on this repo and start a [new issue](https://git.generalassemb.ly/seir-201/recursion/issues/new?assignees=&labels=&template=seir-homework-submission.md&title=YOUR+FULL+NAME).
-1. The issue template will ask that you answer three exit ticket questions on recursion before submitting your issue, to summarize your learning on this topic.
+1. The issue template will ask that you answer exit ticket questions on recursion before submitting your issue, to summarize your learning on this topic.
 
-**Note: This exercise includes a coding component, but for tonight, focus on understanding recursion conceptually. We will do the coding part of the assignment together tomorrow morning.**
+**Note: This exercise includes a coding component, but for tonight, focus on understanding recursion conceptually. We will do the actual coding part of the assignment together tomorrow morning.**
 
 Unless otherwise noted, homework is due at 10:00 AM ET the next day.
 
@@ -24,9 +24,9 @@ There are two parts to this lesson:
 1. [myGA module: Recursion](https://my.generalassemb.ly/activities/773) -- homework tonight
 2. [In-Class Exercise: Writing Recursive Functions](exercises/recursion.js) -- tomorrow's morning exercise.
 
-You can automatically test your progress in the exercises by running `npm install` from your terminal inside this folder to install the automated testing libraries, then run `npm test` to see if your functions pass the test cases. You will have to add the necessary parameters to these functions so you can reference their usage inside the test file to see how the tests expect the function to be called.
+You can automatically test your progress in the exercises by running `npm install` from your terminal inside this folder to install the testing dependencies, then run `npm test` to see if your functions pass the test cases. 
 
-> **Note**: The myGA module contains a link to an exercise in CodePen. **The code in CodePen is the exact same as the code for the in-class exercises.**
+> **Note**: The myGA module contains a link to an [exercise in CodePen](https://codepen.io/GAmarketing/pen/oVNWjd). **The code in CodePen is the exact same as the code for the in-class exercises.**
 
 ## Learning Objectives
 
