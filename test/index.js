@@ -1,11 +1,19 @@
 const expect = require('chai').expect;
 const {
+	addUp,
 	findMax,
 	factorial,
 	fibonacci,
 	coinFlips,
 	letterCombinations,
 } = require('../recursion.js');
+
+describe('addUp', () => {
+	it('should return the sum of all positive numbers up to and including the given number', () => {
+		expect(addUp(3)).to.equal(6);
+		expect(addUp(100)).to.equal(5050);
+	});
+});
 
 describe('findMax', () => {
 	it('should find the largest number in an array', () => {
