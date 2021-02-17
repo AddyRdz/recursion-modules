@@ -143,7 +143,7 @@ const getArraySum = (numsArr, sum) => {
     return sum;
   }
   sum += numsArr.shift();
-  return sumNumbers(numsArr, sum);
+  return getArraySum(numsArr, sum);
 }
 ```
 7. Let’s test it!
