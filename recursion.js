@@ -3,7 +3,7 @@
 // All functions must use recursion
 
 function addUp() {
-	//This function returns the sum of all the numbers up to and including a given number.
+	//This function takes a positive number as an argument, and returns the sum of all the positive numbers up to and including the given number.
 }
 
 function findMax() {
@@ -37,6 +37,7 @@ function letterCombinations() {
 }
 
 module.exports = {
+	addUp,
 	findMax,
 	factorial,
 	fibonacci,
