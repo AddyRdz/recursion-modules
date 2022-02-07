@@ -14,7 +14,7 @@ For the myGA modules, focus on grasping the main ideas and larger concepts. The 
 
 Tomorrow morning, we will dive deeper into understanding and writing recursive functions.
 
->Note: The myGA module links to a coding exercise on CodePen. 
+>Note: The myGA module links to a coding exercise on [CodePen](https://codepen.io/GAmarketing/pen/oVNWjd?editors=0010#0). 
 
 For tonight, focus on understanding recursion conceptually. Do try out the provided coding exercises, as they will help you with your understanding. However you are not required to complete them as part of this deliverable.
 
