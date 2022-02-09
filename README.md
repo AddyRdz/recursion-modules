@@ -22,7 +22,7 @@ For tonight, focus on understanding recursion conceptually. Do try out the provi
 
 There are two parts to this lesson. For your deliverable you will be reading through the myGA modules and answering the questions in the "Issues" template.
 1. [myGA module: Recursion](https://my.generalassemb.ly/activities/773)
-2. [In-class Lesson: Writing Recursive Functions](exercises/recursion.js) - Tomorrow's activity!
+2. [In-class Lesson: Writing Recursive Functions](https://git.generalassemb.ly/seir-1213/recursion-lesson) - Tomorrow's activity!
 
 ## Learning Objectives
 
